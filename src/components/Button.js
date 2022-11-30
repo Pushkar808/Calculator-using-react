@@ -34,7 +34,7 @@ function Button(props) {
         else if (value == "%") {//if percentage is there then simply add /100 
             console.log(parseFloat(num) / 100)
             setnum(parseFloat(num) / 100)//setting it to actual value so that /100 will not be modified by .
-            props.setvalue(props.value + "/100+")//as percentage is /100 
+            props.setvalue(props.value + "/100")//as percentage is /100 
         }
         else {
             setnum(props.value + ".");
